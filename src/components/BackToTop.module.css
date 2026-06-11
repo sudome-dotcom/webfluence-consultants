@@ -1,0 +1,10 @@
+.btn {
+  position: fixed; bottom: 28px; right: 28px; width: 44px; height: 44px;
+  border-radius: 50%; background: #0025cc; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; opacity: 0; transform: translateY(20px);
+  transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: 0 8px 24px rgba(0,37,204,0.3); z-index: 500; border: none;
+}
+.show { opacity: 1; transform: translateY(0); }
+.btn:hover { background: #001a99; transform: translateY(-3px); }

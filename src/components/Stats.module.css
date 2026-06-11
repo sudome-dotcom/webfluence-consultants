@@ -1,0 +1,63 @@
+.section { background:#0025cc; padding:64px 0; }
+.container { max-width:1180px; margin:0 auto; padding:0 28px; }
+.grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:rgba(255,255,255,0.12); border-radius:16px; overflow:hidden; }
+.item { background:rgba(255,255,255,0.04); padding:40px 24px; text-align:center; }
+/* --- Desktop & Base Styles --- */
+.item { 
+  background: rgba(255, 255, 255, 0.04); 
+  padding: 40px 24px; 
+  text-align: center; 
+  /* Prevent text elements from breaking layout boundaries */
+  overflow: hidden; 
+}
+
+.number { 
+  font-family: 'Syne', sans-serif; 
+  font-size: clamp(32px, 4.5vw, 48px); /* Slightly brought down base size */
+  font-weight: 800; 
+  color: #fff; 
+  line-height: 1; 
+}
+
+.suffix { 
+  font-family: 'Syne', sans-serif; 
+  font-size: clamp(22px, 3vw, 32px); /* Slightly brought down base size */
+  font-weight: 800; 
+  color: #ff6b35; 
+}
+
+.label { 
+  font-size: 13px; 
+  color: rgba(255, 255, 255, 0.6); 
+  margin-top: 8px; 
+  font-weight: 500; 
+  line-height: 1.4; /* Gives multi-line labels breathing room */
+}
+
+/* --- Mobile Specific Tweaks --- */
+@media (max-width: 900px) {
+  .grid { 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1px; /* Keeps your thin divider grid line */
+  }
+
+  .item {
+    /* Slightly reduced horizontal padding so long words don't clip */
+    padding: 32px 16px; 
+  }
+
+  .number { 
+    /* Scaling the font down gracefully on smaller mobile viewports */
+    font-size: clamp(26px, 7vw, 34px); 
+  }
+
+  .suffix { 
+    /* Keeping the orange suffix proportional to the smaller number */
+    font-size: clamp(18px, 5vw, 24px); 
+  }
+
+  .label {
+    font-size: 12px; /* Marginally smaller font ensures labels fit perfectly */
+    padding: 0 4px;  /* Keeps text away from the edges */
+  }
+}
