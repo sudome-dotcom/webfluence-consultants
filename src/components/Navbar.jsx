@@ -33,7 +33,7 @@ export default function Navbar() {
               <text x="18" y="23" textAnchor="middle" fontFamily="Syne,sans-serif" fontSize="16" fontWeight="800" fill="white">W</text>
             </svg>
             WEBFLUENCE */}
-            <img src="/webfluence-logo.png" alt="WEBFLUENCE Logo" />
+            <img src="/webfluence-logo.png" alt="WEBFLUENCE Logo" /> WEBFLUENCE
           </a>
 
           <div className={styles.links}>
