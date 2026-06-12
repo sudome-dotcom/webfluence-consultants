@@ -12,7 +12,7 @@
 }
 
 .number { 
-  font-family: 'Syne', sans-serif; 
+  font-family: 'ClashDisplay', sans-serif; 
   font-size: clamp(32px, 4.5vw, 48px); /* Slightly brought down base size */
   font-weight: 800; 
   color: #fff; 
@@ -20,7 +20,7 @@
 }
 
 .suffix { 
-  font-family: 'Syne', sans-serif; 
+  font-family: 'ClashDisplay', sans-serif; 
   font-size: clamp(22px, 3vw, 32px); /* Slightly brought down base size */
   font-weight: 800; 
   color: #ff6b35; 

@@ -18,7 +18,7 @@
 }
 
 .brand { 
-  font-family: 'Syne', sans-serif; 
+  font-family: 'ClashDisplay', sans-serif; 
 }
 
 /* 1. Cleaned up logo structure and alignment */
@@ -89,7 +89,7 @@
 }
 
 .colTitle { 
-  font-family: 'Syne', sans-serif; 
+  font-family: 'ClashDisplay', sans-serif; 
   font-size: 13px; 
   font-weight: 700; 
   color: #fff; 
@@ -124,7 +124,7 @@
   color: #fff; 
   padding: 10px 20px; 
   border-radius: 100px; 
-  font-family: 'Syne', sans-serif; 
+  font-family: 'ClashDisplay', sans-serif; 
   font-weight: 700; 
   font-size: 12px; 
   text-decoration: none;
