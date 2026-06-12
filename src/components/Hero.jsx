@@ -24,10 +24,10 @@ export default function Hero() {
             Nepal's #1 Growth Agency
           </div>
           <p className={styles.eyebrow}>We are a</p>
-          <h1 className={styles.title}>
-            <span>{word}</span>
-            <span className={styles.cursor} />
-          </h1>
+      <h1 className={styles.title}>
+  <span style={{ display: 'inline' }}>{word}</span>
+  <span className={styles.cursor} />
+</h1>
           <p className={styles.sub}>
             We partner with ambitious businesses to build digital engines that attract, convert, and retain customers at scale.
           </p>

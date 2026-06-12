@@ -35,10 +35,10 @@
   margin-bottom: 12px; animation: fadeUp 0.7s 0.05s ease both;
 }
 .title {
-  font-family: 'ClashDisplay',sans-serif; font-size: clamp(52px,9vw,96px);
+  font-family: 'ClashDisplay', sans-serif; font-size: clamp(52px,9vw,96px);
   font-weight: 800; line-height: 0.92; letter-spacing: -4px; color: #0025cc;
   margin-bottom: 12px; animation: fadeUp 0.8s 0.1s ease both;
-  min-height: 1.05em; display: flex; align-items: center; justify-content: center;
+  min-height: 1.05em; display: block; text-align: center;
 }
 .cursor {
   display: inline-block; width: 5px; height: 0.75em; background: #ff6b35;
