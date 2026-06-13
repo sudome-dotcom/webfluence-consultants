@@ -1,8 +1,8 @@
 .section { padding:100px 0; background:#f8f9ff; }
 .container { max-width:1180px; margin:0 auto; padding:0 28px; }
 .header { text-align:center; margin-bottom:64px; }
-.label { font-family:'ClashDisplay',sans-serif; font-size:11px; font-weight:700; letter-spacing:4px; text-transform:uppercase; color:#ff6b35; margin-bottom:10px; }
-.title { font-family:'ClashDisplay',sans-serif; font-size:clamp(28px,4vw,44px); font-weight:800; color:#1a1a2e; letter-spacing:-1.5px; }
+.label { font-family:'ClashDisplay',sans-serif; font-size:13px; font-weight:700; letter-spacing:4px; text-transform:uppercase; color:#ff6b35; margin-bottom:10px; }
+.title { font-family:'ClashDisplay',sans-serif; font-size:clamp(34px,4vw,52px); font-weight:800; color:#1a1a2e; letter-spacing:-1.5px; }
 .sub { font-size:15px; color:#4a5568; line-height:1.75; max-width:460px; margin:14px auto 0; }
 .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }
 .card {
@@ -18,7 +18,7 @@
   width:48px; height:48px; background:#0025cc; border-radius:12px;
   display:flex; align-items:center; justify-content:center; margin-bottom:20px;
 }
-.stepTitle { font-family:'ClashDisplay',sans-serif; font-size:16px; font-weight:700; color:#1a1a2e; margin-bottom:8px; }
-.desc { font-size:13.5px; color:#4a5568; line-height:1.7; }
+.stepTitle { font-family:'ClashDisplay',sans-serif; font-size:18px; font-weight:700; color:#1a1a2e; margin-bottom:8px; }
+.desc { font-size:15px; color:#4a5568; line-height:1.7; }
 @media(max-width:900px){ .grid { grid-template-columns:repeat(2,1fr); } }
 @media(max-width:560px){ .grid { grid-template-columns:1fr; } }

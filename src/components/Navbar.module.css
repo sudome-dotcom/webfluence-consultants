@@ -1,6 +1,6 @@
 .navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-  height: 72px; display: flex; align-items: center; padding: 0 40px;
+  height:80px; display: flex; align-items: center; padding: 0 40px;
   transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
 }
 
@@ -19,12 +19,12 @@ img{
 }
 .logo {
   display: flex; align-items: center; gap: 10px;
-  font-family: 'ClashDisplay', sans-serif; font-weight: 800; font-size: 15px; color: #0025cc;
+  font-family: 'ClashDisplay', sans-serif; font-weight: 800; font-size: 18px; color: #0025cc;
 }
 .logoIcon { border-radius: 10px; overflow: hidden; flex-shrink: 0; }
-.links { display: flex; align-items: center; gap: 32px; }
+.links { display: flex; align-items: center; gap:40px; }
 .link {
-  font-family: 'ClashDisplay', sans-serif; font-size: 13px; font-weight: 600;
+  font-family: 'ClashDisplay', sans-serif; font-size: 15px; font-weight: 600;
   color: #2d3748; position: relative; transition: color 0.3s; padding: 4px 0;
 }
 .link::after {

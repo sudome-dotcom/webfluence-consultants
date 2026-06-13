@@ -1,7 +1,44 @@
+/* ── Local Fonts ─────────────────────────────────────────── */
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('./assets/fonts/ClashDisplay-Regular.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('./assets/fonts/ClashDisplay-Medium.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('./assets/fonts/ClashDisplay-Semibold.woff2') format('woff2');
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('./assets/fonts/ClashDisplay-Bold.woff2') format('woff2');
+  font-weight: 700 800; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./assets/fonts/Satoshi-Regular.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./assets/fonts/Satoshi-Medium.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./assets/fonts/Satoshi-Bold.woff2') format('woff2');
+  font-weight: 600 700; font-style: normal; font-display: swap;
+}
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Satoshi', sans-serif;
   color: #1a1a2e;
   background: #fff;
   overflow-x: hidden;
@@ -11,6 +48,14 @@ a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 img { max-width: 100%; display: block; }
 button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+/* Particle canvas sits at z-index 0 (fixed).
+   Hero is transparent — canvas shows through.
+   All other sections have solid backgrounds so canvas is hidden beneath them. */
+main > *:not(:first-child) {
+  position: relative;
+  z-index: 1;
+}
 
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: #f0f0f0; }
@@ -31,11 +76,4 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   --gray-800: #1a1a2e;
   --nav-h: 72px;
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.favicon {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
 }
