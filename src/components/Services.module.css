@@ -1,4 +1,4 @@
-.section { padding: 100px 0; background: #fff; }
+.section { padding: 100px 0; background: #fff;position: relative; z-index: 1 ; }
 .container { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
 .header { text-align: center; margin-bottom: 64px; }
 .label { font-family:'ClashDisplay',sans-serif; font-size:13px; font-weight:700; letter-spacing:4px; text-transform:uppercase; color:#ff6b35; margin-bottom:10px; }

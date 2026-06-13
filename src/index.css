@@ -1,5 +1,5 @@
 /* ── Local Fonts ─────────────────────────────────────────── */
-@font-face {
+/* @font-face {
   font-family: 'ClashDisplay';
   src: url('./assets/fonts/ClashDisplay-Regular.woff2') format('woff2');
   font-weight: 400; font-style: normal; font-display: swap;
@@ -33,9 +33,14 @@
   font-family: 'Satoshi';
   src: url('./assets/fonts/Satoshi-Bold.woff2') format('woff2');
   font-weight: 600 700; font-style: normal; font-display: swap;
-}
+} */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 html { scroll-behavior: smooth; font-size: 16px; }
 body {
   font-family: 'Satoshi', sans-serif;
@@ -49,12 +54,16 @@ ul { list-style: none; }
 img { max-width: 100%; display: block; }
 button { font-family: inherit; cursor: pointer; border: none; background: none; }
 
+main { display: block; margin: 0; padding: 0; }
+footer { margin: 0; padding: 0; }
+
 /* Particle canvas sits at z-index 0 (fixed).
    Hero is transparent — canvas shows through.
    All other sections have solid backgrounds so canvas is hidden beneath them. */
 main > *:not(:first-child) {
   position: relative;
   z-index: 1;
+  /* background: red; */
 }
 
 ::-webkit-scrollbar { width: 5px; }
