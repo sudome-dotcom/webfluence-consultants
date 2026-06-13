@@ -1,5 +1,6 @@
-.section { padding: 100px 0; background: #f8f9ff; position: relative; z-index: 1; }
+.section { padding:100px 0; background:#f8f9ff; }
 .container { max-width:1180px; margin:0 auto; padding:0 28px; }
+.inner { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
 .label { font-family:'ClashDisplay',sans-serif; font-size:11px; font-weight:700; letter-spacing:4px; text-transform:uppercase; color:#ff6b35; margin-bottom:10px; }
 .title { font-family:'ClashDisplay',sans-serif; font-size:clamp(34px,3.5vw,48px); font-weight:800; color:#1a1a2e; line-height:1.1; letter-spacing:-1.5px; }
 .bar { width:52px; height:4px; background:linear-gradient(to right,#0025cc,#ff6b35); border-radius:2px; margin:20px 0 28px; }
